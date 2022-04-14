@@ -1,0 +1,97 @@
+/* Routage des polices */
+
+@font-face {
+  font-family: aileronregular;
+  src: url("./font/roboto-regular-webfont.woff") format("woff"),
+    url("./font/roboto-regular-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: aileronitalic;
+  src: url("./font/roboto-italic-webfont.woff") format("woff"),
+    url("./font/roboto-italic-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: aileronbold;
+  src: url("./font/roboto-bold-webfont.woff") format("woff"),
+    url("./font/roboto-bold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Attribution des polices */
+
+h1,
+h2 {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #100ff1;
+}
+
+h3 {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+  color: #0f8cf1;
+}
+
+p {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+ul li {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #0f8cf1;
+  list-style-type: none;
+}
+
+/* Attribution des polices : Titre dans le Header */
+
+.header .title-burger-menu-site,
+.header .title-burger-menu-dashboard {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+/* Attribution des polices : Label */
+
+label {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #100ff1;
+}
+
+/* Attribution des polices : Input */
+
+input,
+textarea {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  color: #333;
+}
+
+/* Attribution des polices : Button */
+
+button {
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-style: italic;
+}
+
+/* Annulation de la mise en forme native html de la balise a */
+
+a {
+  text-decoration: none;
+  color: #100ff1;
+}

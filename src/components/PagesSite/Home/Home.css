@@ -1,0 +1,70 @@
+/* Mise en forme des éléments dans la page */
+
+.wrapper-home {
+  min-height: calc(100vh - 60px - 82px);
+  display: flex;
+  align-items: center;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Mise en forme container image */
+
+.container-img {
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Mise en forme des écrits */
+
+.welcome {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.home li {
+  text-align: center;
+  color: #e5e5e5;
+}
+
+.list {
+  text-align: center;
+}
+
+.list li {
+  padding: 1.5rem 0;
+}
+
+/* Mise en place du footer en bas de page quand pas suffisamment de contenu */
+
+.home-page ~ footer {
+  position: fixed;
+  bottom: 0;
+}
+
+/* Média Queries - Adaptation sur écran de plus de 360px */
+
+@media screen and (min-width: 360px) {
+}
+
+/* Média Queries - Adaptation sur écran de plus de 768px de large */
+
+@media screen and (min-width: 768px) {
+}
+
+/* Média Queries - Adaptation sur écran de plus de 992px de large */
+
+@media screen and (min-width: 992px) {
+}
+
+/* Média Queries - Adaptation sur écran de plus de 992px de large et 1049px de haut */
+
+@media screen and (min-width: 992px) and (min-height: 1049px) {
+}

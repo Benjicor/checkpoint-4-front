@@ -1,0 +1,65 @@
+/* Stylisation du footer et sa position */
+
+footer {
+  display: flex;
+  background-color: #adadad;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+/* Mise en forme des logos cliquable */
+
+.logo-cliquable {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.magazine,
+.youtube {
+  display: block;
+  height: 50px;
+}
+
+.magazine {
+  width: 100px;
+  transition: 0.5s ease;
+}
+
+.magazine:hover {
+  transform: scale(1.5);
+}
+
+.youtube {
+  width: 100px;
+  transition: 0.5s ease;
+}
+
+.youtube:hover {
+  transform: scale(1.5);
+}
+
+/* Média Queries - Adaptation sur écran de plus de 360px */
+
+@media screen and (min-width: 360px) {
+  /* Media Query BurgerMenu */
+}
+
+/* Média Queries - Adaptation sur écran de plus de 768px */
+
+@media screen and (min-width: 768px) {
+  /* Media Query BurgerMenu */
+}
+
+/* Média Queries - Adaptation sur écran de plus de 992px */
+
+@media screen and (min-width: 992px) {
+  /* Media Query BurgerMenu */
+}
