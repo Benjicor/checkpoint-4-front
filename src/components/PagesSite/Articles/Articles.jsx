@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import moment from "moment";
 
-import { penDuick3 } from "../../../assets/jpg/penDuick3.jpg";
-
 import "./Articles.css";
 
 function Articles({ setSiteTitle }) {
@@ -21,7 +19,7 @@ function Articles({ setSiteTitle }) {
   }, []);
 
   return (
-    <div>
+    <div className="container-global-articles">
       {articles?.map((articles) => (
         <div className="wrapper-articles">
           <div className="page-articles">
@@ -30,8 +28,11 @@ function Articles({ setSiteTitle }) {
               <div className="container-articles">
                 <div className="wrapper-illustration-articles">
                   <img src={articles.src} alt={articles.src} />
-                  <img src={penDuick3} alt="Pen Duick 3" />
-                  <a className="illustration-articles" href={articles.link}></a>
+                  <img
+                    className="illustration-articles"
+                    src={articles.link}
+                    alt={articles.link}
+                  />
                 </div>
                 <div className="datetime-created-articles">
                   Article datant du :{" "}

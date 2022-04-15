@@ -10,24 +10,28 @@ function Home({ setSiteTitle }) {
   }, []);
 
   return (
-    <div className="wrapper-home">
-      <div className="page-home">
-        <div className="home">
-          <h1 className="title-home">La Voile et les Voiliers</h1>
-          <div className="container-home">
-            <img
-              className="photo-Wally"
-              src={wally}
-              alt="Voiliers Wally"
-              width="100%"
-            />
+    <div className="container-global-home">
+      <div className="wrapper-home">
+        <div className="page-home">
+          <div className="home">
+            <h1 className="title-home">La Voile et les Voiliers</h1>
+            <div className="container-home">
+              <div className="wrapper-illustration-home">
+                <img
+                  className="illustration-home"
+                  src={wally}
+                  alt="Voiliers Wally"
+                  width="100%"
+                />
+              </div>
+            </div>
           </div>
+          <ul className="list">
+            <li>Actualités</li>
+            <li>Articles</li>
+            <li>Événements</li>
+          </ul>
         </div>
-        <ul className="list">
-          <li>Actualités</li>
-          <li>Articles</li>
-          <li>Événements</li>
-        </ul>
       </div>
     </div>
   );

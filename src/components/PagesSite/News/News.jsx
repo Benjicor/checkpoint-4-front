@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import moment from "moment";
 
-import { penDuick3 } from "../../../assets/jpg/penDuick3.jpg";
-
 import "./News.css";
 
 function News({ setSiteTitle }) {
@@ -21,17 +19,20 @@ function News({ setSiteTitle }) {
   }, []);
 
   return (
-    <div>
+    <div className="container-global-news">
       {news?.map((news) => (
         <div className="wrapper-news">
-          <div className="news-page">
-            <div className="title-news">
-              <h1 className="news">{news.title}</h1>
+          <div className="page-news">
+            <div className="news">
+              <h1 className="title-news">{news.title}</h1>
               <div className="container-news">
                 <div className="wrapper-illustration-news">
                   <img src={news.src} alt={news.src} />
-                  <img src={penDuick3} alt="Pen Duick 3" />
-                  <a className="illustration-news" href={news.link}></a>
+                  <img
+                    className="illustration-news"
+                    src={news.link}
+                    alt={news.link}
+                  />
                 </div>
                 <div className="datetime-created-news">
                   Actualité datant du :{" "}

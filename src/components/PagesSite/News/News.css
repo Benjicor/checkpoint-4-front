@@ -1,7 +1,10 @@
 /* Mise en forme des éléments dans la page */
 
-.wrapper-news {
+.container-global-news {
   min-height: calc(100vh - 60px - 82px);
+}
+
+.wrapper-news {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,18 +26,27 @@
   text-align: center;
 }
 
+.datetime-created-news {
+  padding: 1.5rem 0;
+}
+
+/* Mise en forme container image */
+
 .wrapper-illustration-news {
   display: flex;
   border: 2px solid #e5e5e5;
   border-radius: 5px;
   justify-content: center;
   margin: auto;
-  width: 75%;
-  height: auto;
+  width: 300px;
+  height: 200px;
 }
 
-.datetime-created-news {
-  padding: 1.5rem 0;
+/* Mise en forme de l'image dans son container */
+
+.illustration-news {
+  width: 100%;
+  border-radius: 5px;
 }
 
 /* Mise en forme des écrits */
@@ -59,14 +71,17 @@
 /* Média Queries - Adaptation sur écran de plus de 768px de large */
 
 @media screen and (min-width: 768px) {
+  .wrapper-illustration-news {
+    width: 600px;
+    height: 400px;
+  }
 }
 
 /* Média Queries - Adaptation sur écran de plus de 992px de large */
 
 @media screen and (min-width: 992px) {
-}
-
-/* Média Queries - Adaptation sur écran de plus de 992px de large et 1049px de haut */
-
-@media screen and (min-width: 992px) and (min-height: 1049px) {
+  .wrapper-illustration-news {
+    width: 900px;
+    height: 600px;
+  }
 }

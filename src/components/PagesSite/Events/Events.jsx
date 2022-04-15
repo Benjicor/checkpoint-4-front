@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import moment from "moment";
 
-import { penDuick3 } from "../../../assets/jpg/penDuick3.jpg";
-
 import "./Events.css";
 
 function Events({ setSiteTitle }) {
@@ -21,7 +19,7 @@ function Events({ setSiteTitle }) {
   }, []);
 
   return (
-    <div>
+    <div className="container-global-events">
       {events?.map((events) => (
         <div className="wrapper-events">
           <div className="page-events">
@@ -30,8 +28,11 @@ function Events({ setSiteTitle }) {
               <div className="container-events">
                 <div className="wrapper-illustration-events">
                   <img src={events.src} alt={events.src} />
-                  <img src={penDuick3} alt="Pen Duick 3" />
-                  <a className="illustration-events" href={events.link}></a>
+                  <img
+                    className="illustration-events"
+                    src={events.link}
+                    alt={events.link}
+                  />
                 </div>
                 <div className="location-events">{events.location}</div>
                 <div className="datetime-created-events">
