@@ -13,37 +13,37 @@ function BurgerContent({ handleClick }) {
           </Link>
         </li>
         <li>
-          <Link className="link" to="/News" onClick={handleClick}>
+          <Link className="link" to="/news" onClick={handleClick}>
             Actualités
           </Link>
         </li>
         <li>
-          <Link className="link" to="/Articles" onClick={handleClick}>
+          <Link className="link" to="/articles" onClick={handleClick}>
             Articles
           </Link>
         </li>
         <li>
-          <Link className="link" to="/Events" onClick={handleClick}>
+          <Link className="link" to="/events" onClick={handleClick}>
             Événements
           </Link>
         </li>
         <li>
-          <Link className="link" to="/Contact" onClick={handleClick}>
+          <Link className="link" to="/contact" onClick={handleClick}>
             Contact
           </Link>
         </li>
         <li>
-          <Link className="link" to="/Dashboard/News" onClick={handleClick}>
+          <Link className="link" to="/dashboard/news" onClick={handleClick}>
             Administration Actualités
           </Link>
         </li>
         <li>
-          <Link className="link" to="/Dashboard/Articles" onClick={handleClick}>
+          <Link className="link" to="/dashboard/articles" onClick={handleClick}>
             Administration Articles
           </Link>
         </li>
         <li>
-          <Link className="link" to="/Dashboard/Events" onClick={handleClick}>
+          <Link className="link" to="/dashboard/events" onClick={handleClick}>
             Administration Événements
           </Link>
         </li>
