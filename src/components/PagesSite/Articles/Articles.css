@@ -1,20 +1,21 @@
 /* Mise en forme des éléments dans la page */
 
-.wrapper-home {
+.wrapper-articles {
   min-height: calc(100vh - 60px - 82px);
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.home {
+.articles {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-/* Mise en forme container image */
+/* Mise en forme container actualité */
 
-.container-home {
+.container-articles {
   width: 100%;
   position: relative;
   justify-content: center;
@@ -22,29 +23,30 @@
   text-align: center;
 }
 
+.wrapper-illustration-articles {
+  display: flex;
+  border: 2px solid #e5e5e5;
+  border-radius: 5px;
+  justify-content: center;
+  margin: auto;
+  width: 75%;
+  height: auto;
+}
+
+.datetime-created-articles {
+  padding: 1.5rem 0;
+}
+
 /* Mise en forme des écrits */
 
-.title-home {
+.title-articles {
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
-.home li {
-  text-align: center;
-  color: #e5e5e5;
-}
-
-.list {
-  text-align: center;
-}
-
-.list li {
-  padding: 1.5rem 0;
-}
-
 /* Mise en place du footer en bas de page quand pas suffisamment de contenu */
 
-.page-home ~ footer {
+.page-articles ~ footer {
   position: fixed;
   bottom: 0;
 }

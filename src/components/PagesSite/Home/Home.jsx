@@ -1,20 +1,20 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
-import wally from '../../../assets/png/wally.png';
+import wally from "../../../assets/png/wally.png";
 
-import './Home.css';
+import "./Home.css";
 
 function Home({ setSiteTitle }) {
   useEffect(() => {
-    setSiteTitle('Accueil');
+    setSiteTitle("Accueil");
   }, []);
 
   return (
     <div className="wrapper-home">
-      <div className="home-page">
+      <div className="page-home">
         <div className="home">
-          <h1 className="welcome">La Voile et les Voiliers</h1>
-          <div className="container-img">
+          <h1 className="title-home">La Voile et les Voiliers</h1>
+          <div className="container-home">
             <img
               className="photo-Wally"
               src={wally}
