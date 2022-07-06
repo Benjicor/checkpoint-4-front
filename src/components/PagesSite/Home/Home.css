@@ -1,0 +1,93 @@
+/* Mise en forme des éléments dans la page */
+
+.container-global-home {
+  min-height: calc(100vh - 60px - 82px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Mise en forme container accueil */
+
+.container-home {
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Mise en forme container image */
+
+.wrapper-illustration-home {
+  display: flex;
+  border: 2px solid #e5e5e5;
+  border-radius: 5px;
+  justify-content: center;
+  margin: auto;
+  width: 300px;
+  height: 200px;
+}
+
+/* Mise en forme de l'image dans son container */
+
+.illustration-home {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Mise en forme des écrits */
+
+.title-home {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.home li {
+  text-align: center;
+  color: #e5e5e5;
+}
+
+.list {
+  text-align: center;
+}
+
+.list li {
+  padding: 1.5rem 0;
+}
+
+/* Mise en place du footer en bas de page quand pas suffisamment de contenu */
+
+.page-home ~ footer {
+  position: fixed;
+  bottom: 0;
+}
+
+/* Média Queries - Adaptation sur écran de plus de 360px */
+
+@media screen and (min-width: 360px) {
+}
+
+/* Média Queries - Adaptation sur écran de plus de 768px de large */
+
+@media screen and (min-width: 768px) {
+  .wrapper-illustration-home {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+/* Média Queries - Adaptation sur écran de plus de 992px de large */
+
+@media screen and (min-width: 992px) {
+  .wrapper-illustration-home {
+    width: 900px;
+    height: 600px;
+  }
+}

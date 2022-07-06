@@ -1,0 +1,87 @@
+/* Mise en forme des éléments dans la page */
+
+.container-global-articles {
+  min-height: calc(100vh - 60px - 82px);
+}
+
+.wrapper-articles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* Mise en forme container articles */
+
+.container-articles {
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.datetime-created-articles {
+  padding: 1.5rem 0;
+}
+
+/* Mise en forme container image */
+
+.wrapper-illustration-articles {
+  display: flex;
+  border: 2px solid #e5e5e5;
+  border-radius: 5px;
+  justify-content: center;
+  margin: auto;
+  width: 300px;
+  height: 200px;
+}
+
+/* Mise en forme de l'image dans son container */
+
+.illustration-articles {
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* Mise en forme des écrits */
+
+.title-articles {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Mise en place du footer en bas de page quand pas suffisamment de contenu */
+
+.page-articles ~ footer {
+  position: fixed;
+  bottom: 0;
+}
+
+/* Média Queries - Adaptation sur écran de plus de 360px */
+
+@media screen and (min-width: 360px) {
+}
+
+/* Média Queries - Adaptation sur écran de plus de 768px de large */
+
+@media screen and (min-width: 768px) {
+  .wrapper-illustration-articles {
+    width: 600px;
+    height: 400px;
+  }
+}
+
+/* Média Queries - Adaptation sur écran de plus de 992px de large */
+
+@media screen and (min-width: 992px) {
+  .wrapper-illustration-articles {
+    width: 900px;
+    height: 600px;
+  }
+}
